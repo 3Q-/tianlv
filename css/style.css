@@ -15,9 +15,8 @@ header.ui-header{ background:linear-gradient(#5fb223, #3a6b15) repeat scroll 0 0
 .shadow_banner{box-shadow:0 -2px 1px #366515;}
 
 /* banner */
-
-
 .banner{position: relative;text-align: center;background: #fff;}
+.banner img{width:100%;}
 .line_waves{background:url(../img/bolang.png) 0 0 repeat-x;height:8px;position: absolute;left:0px; right:0px; bottom:0px;}
 .banner_list{position: absolute;bottom:-33px;left:50%;margin-left:-5.15%}
 .banner_list .item{width:8px;height:8px;background-color:#afafaf;float: left;display: inline;border-radius:5px;border: 1px solid #afafaf;margin-right:10px;cursor:pointer;}
@@ -52,6 +51,13 @@ header.ui-header{ background:linear-gradient(#5fb223, #3a6b15) repeat scroll 0 0
 .check_code_sub {padding-bottom:80px;font-size: 2.25em;}
 .check_code_sub .ui-btn-text{font-size: 2.25em;}
 
+/*checkTrueDetail*/
+.pd_msg{text-align:left;padding:27px 0 30px;}
+.pd_msg_item{padding:15px 0;}
+.pd_msg_item1{border-bottom:1px solid #e5e5e5;}
+.pd_msg_item2{border-top:1px solid #fff;}
+.pd_msg h2{font-size:1.375em;font-weight: bold;margin:0 6.25%;}
+.pd_msg p{font-size:1em;line-height:1.5;margin:0 6.25%;}
 
 
 /*footer*/
