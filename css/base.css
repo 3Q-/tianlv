@@ -19,6 +19,7 @@ ul, ol { list-style:none; }
 ins { text-decoration:none; }
 del { text-decoration:line-through; }
 legend { color:#000; }
+a{text-decoration:none;}
 
 /*清除浮动*/
 .clf:after { clear:both; content:""; display:block; height:0; visibility:hidden; }
