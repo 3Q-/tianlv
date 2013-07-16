@@ -90,7 +90,10 @@ header.ui-header{ background:linear-gradient(#5fb223, #3a6b15) repeat scroll 0 0
 .pd_msg .re_phone a:hover{color:#fff; background:linear-gradient(#5eb023,#478419) repeat 0 0 #fff;text-shadow:none;}
 
 /*tracking 追踪溯源*/
-
+.stepItem{margin: 0 6.25%;text-align: left; background: #FFF url(../img/track_middle.gif) left bottom no-repeat;height: 50px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.stepItem:first-child{  background: #FFF url(../img/track_last.gif) left bottom no-repeat;}
+.stepItem:last-child{  background: #FFF url(../img/track_first.gif) left bottom no-repeat;}
+.stepItem p{border:1px solid #e1e1e1;padding-left:10px; margin-left:37px; margin-top:20px;font-size:0.8125em;line-height:2.125em; border-left:0 none; border-radius:0 4px 4px 0;}
 
 
 
