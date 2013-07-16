@@ -89,6 +89,15 @@ header.ui-header{ background:linear-gradient(#5fb223, #3a6b15) repeat scroll 0 0
 .pd_msg .re_phone a icon{display: inline-block; background:url(../img/icon_phone.png) no-repeat 0 0; width:15px; height: 15px;position: relative;top:2px;}
 .pd_msg .re_phone a:hover{color:#fff; background:linear-gradient(#5eb023,#478419) repeat 0 0 #fff;text-shadow:none;}
 
+/*tracking 追踪溯源*/
+
+
+
+
+
+
+
+
 
 
 
@@ -130,9 +139,6 @@ header.ui-header{ background:linear-gradient(#5fb223, #3a6b15) repeat scroll 0 0
     .check_code_wrap label.ui-input-text{line-height:2em;height:2em;width:75%;font-size:0.875em;}
     .promo_pd h3{font-size: 1.2em;}
     .promo_pd p{font-size: 1em;color:#9f9f9f;margin-top:1em;}
-
-
-
 }
 
 
