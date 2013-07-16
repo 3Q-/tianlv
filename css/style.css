@@ -26,6 +26,7 @@ header.ui-header{ background:linear-gradient(#5fb223, #3a6b15) repeat scroll 0 0
 .ui-content{padding:0px;}
 .main { width: 100%; max-width: 480px; text-align: center; margin: auto; position: relative;overflow: hidden;}
 .content .main{background: #FFF url(../img/bg_content.gif) 0 0 repeat;}
+.content .bgf{background: #FFF}
 .index_detail{border-bottom:1px solid #e5e5e5;margin:0px 13px;padding:50px 0 30px;}
 .index_detail h2{margin:0px;font-size:1.25em;font-weight:bold;}
 .index_detail p{margin:0.625em 0;}
@@ -70,9 +71,17 @@ header.ui-header{ background:linear-gradient(#5fb223, #3a6b15) repeat scroll 0 0
 .promo_pd{width:68.18%; text-align:left;}
 .promo_pd h3{font-size: 1.875em;font-weight: bold;}
 .promo_pd p{font-size: 1.25em;color:#9f9f9f;margin-top:1.125em;}
-
 .sales_banner .opacity_div{position:absolute; left:0 ; right:0; bottom:0; height:2.25em; line-height: 2.25em; background: #000; opacity:0.5;}
 .sales_banner h2{position:absolute; left:0 ; right:0; bottom:0; height:2.25em; line-height: 2.25em; color:#fff;}
+
+/*promoDetail*/
+.img_p img{max-width:100%;}
+.promo_pd_msg {text-align:left;}
+.promo_pd_msg h2{font-size:1.625em;font-weight: bold;margin-top:20px;}
+.promo_time{margin-top:15px;font-size:1em;color:#999; padding-bottom:10px;border-bottom:1px solid #e5e5e5;}
+.promo_pd_msg .img_p{padding-top: 20px;}
+.pd_article{margin-top:20px;padding-bottom:30px;}
+.pd_article p{line-height:1.5;margin-bottom:8px;}
 
 
 
@@ -99,6 +108,7 @@ header.ui-header{ background:linear-gradient(#5fb223, #3a6b15) repeat scroll 0 0
 .tl{text-align: left;}
 .tc{text-align: center;}
 .tr{text-align: right;}
+.w440{width:91.6666665%; margin:auto;}
 .w_50{width:50%;}
 .w_55{width:55%;}
 .w_40{width:40%;}
@@ -110,7 +120,7 @@ header.ui-header{ background:linear-gradient(#5fb223, #3a6b15) repeat scroll 0 0
 
 @media all and (max-width:480px){
     .check_code_wrap label.ui-input-text{line-height:2em;height:2em;width:75%;font-size:0.875em;}
-    .promo_pd h3{font-size: 1.5em;}
+    .promo_pd h3{font-size: 1.2em;}
     .promo_pd p{font-size: 1em;color:#9f9f9f;margin-top:1em;}
 }
 
