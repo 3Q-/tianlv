@@ -13,12 +13,12 @@
         <div data-role="page">
             <div class="header_wrap">
                 <header data-role="header" class="header">
-                    <a href="index.html" rel="external">返回</a>
+                    <a href="index.html" rel="external" ><img src="img/back.png" alt="返回" /></a>
                 <h1 class="web_title">
                     <img src="img/logo.png" alt="logo" />
                     赣南脐橙
                 </h1> 
-                    <a href="index.html" rel="external">主页</a>
+                    <a href="index.html" rel="external" data-prefetch="true" ><img src="img/home.png" alt="主页" /></a>
                 </header> 
             </div>
             <div data-role="content" class="content">
@@ -30,13 +30,13 @@
                     </div>
                     <div class="page_main shadow">
                         <div class="w440 tl form_wrap">
-                            <form method="post" action="#">
-                                投诉产品：<input type="text"  value="" placeholder="请填写您要投诉的产品名称和各类"/>
-                                购买时间：<input type="text"  value="" placeholder="请填写您购买时间，例如：20130708" />
-                                购买地点：<input type="text"  value="" placeholder="请填写您要投诉产品的购买地点"/>
-                                您的称呼：<input type="text"  value="" placeholder="请填写您的称呼，例如：陈先生/李小姐" />
-                                联系方式：<input type="text"  value="" placeholder="请填写您的手机号码，以便我们能及时与您取得联系" />
-                                投诉详细内容：<textarea  name="" placeholder=" 请详细描述您要投诉的产品问题，我们会及时的给您回复，感谢您的投诉和反馈。" ></textarea> 
+                            <form method="post" action="#" id="com_form">
+                                投诉产品：<input type="text" name="product"  value="" placeholder="请填写您要投诉的产品名称和各类"/>
+                                购买时间：<input type="text" name="time" value="" placeholder="请填写您购买时间，例如：20130708" />
+                                购买地点：<input type="text" name="address"  value="" placeholder="请填写您要投诉产品的购买地点"/>
+                                您的称呼：<input type="text" name="name" value="" placeholder="请填写您的称呼，例如：陈先生/李小姐" />
+                                联系方式：<input type="text" name="tel" value="" placeholder="请填写您的手机号码，以便我们能及时与您取得联系" />
+                                投诉详细内容：<textarea  name="msg" placeholder=" 请详细描述您要投诉的产品问题，我们会及时的给您回复，感谢您的投诉和反馈。" ></textarea> 
                                 <input type="submit" value="确定" />
                             </form>
                         </div>
@@ -59,6 +59,10 @@
                 </p>
             </div>
             </footer>
+            <div class="script none">
+                   <script type="text/javascript" src="js/validate.js"></script>  
+                   <script type="text/javascript" src="js/util.js"></script>  
+            </div>
             <!-- <a href="#" class="goTop"></a> -->
         </div>
     </body>

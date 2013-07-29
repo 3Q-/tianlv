@@ -2,13 +2,14 @@ body{font: 16px Arial,"Microsoft Yahei", sans-serif;}
 
 h1,h2,h3,h4,h5,h6{line-height:1;padding:0px;}
 button,p{font-size:0.875em;line-height:1;}
+.bd {border: 1px solid red;}
 
 /*header*/
 .header_wrap{
     -moz-box-shadow:0 1px 5px #666;
     -webkit-box-shadow:0 1px 5px #666;
     box-shadow:0 1px 5px #666;
-    background: #000;position: relative;z-index:10;border-bottom:1px solid #396a15;position:fixed;left:0; right:0 ;top:0;}
+    background: #000;position: relative;z-index:10;border-bottom:1px solid #396a15;}
 header.header{ 
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #5fb223 ), to( #3a6b15 )); 
     background-image:-webkit-linear-gradient(#5fb223, #3a6b15) ;
@@ -24,11 +25,46 @@ header.header{
 /*width:3em;height:2.4375em;*/
 .header img{vertical-align:middle;} 
 .page_title{background:#447e18; color:#fff; font-size: 1.125em;}
-.page_title p{height: 40px; line-height:40px; text-shadow:none;}
+.page_title p{height: 40px; line-height:40px; text-shadow:none;font-size: 1.125em;}
 .shadow{
     -moz-box-shadow:0 -2px 1px #366515;
     -webkit-box-shadow:0 -2px 1px #366515; 
     box-shadow:0 -2px 1px #366515;
+}
+
+.header .ui-btn-up-a{
+    border:1px solid #224f00;
+	background-image:-webkit-gradient(linear, left top, left bottom, from( #5fb223 ), to( #3a6b15 )); 
+    background-image:-webkit-linear-gradient(#5fb223, #3a6b15) ;
+    background-image:-moz-linear-gradient(#5fb223, #3a6b15);
+    background-image:-ms-linear-gradient( #5fb223,#3a6b15); 
+    background-image:-o-linear-gradient(#5fb223, #3a6b15);
+    background-image:linear-gradient(#5fb223, #3a6b15);
+    border-radius:8px;
+
+    -webkit-box-shadow:0px 2px 0px #5b883a;
+    -moz-box-shadow:0px 2px 0px #5b883a;
+    -o-box-shadow:0px 2px 0px #5b883a;
+    box-shadow:0px 2px 0px #5b883a;
+    margin-top:3px 
+}
+
+.header .ui-btn-inner{ padding:.55em 25px .5em }
+.header .ui-btn-hover-a{
+    border:1px solid #224f00;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #4c8e1c ), to( #366414 )); 
+    background-image:-webkit-linear-gradient(#4c8e1c, #366414) ;
+    background-image:-moz-linear-gradient(#4c8e1c, #366414);
+    background-image:-ms-linear-gradient(#4c8e1c, #366414); 
+    background-image:-o-linear-gradient(#4c8e1c, #366414);
+    background-image:linear-gradient(#4c8e1c, #366414);
+    border-radius:8px;
+
+    -webkit-box-shadow:0px 2px 0px #5b883a;
+    -moz-box-shadow:0px 2px 0px #5b883a;
+    -o-box-shadow:0px 2px 0px #5b883a;
+    box-shadow:0px 2px 0px #5b883a;
+    margin-top:3px 
 }
 
 /* banner */
@@ -43,20 +79,27 @@ header.header{
 
 /*index*/
 .ui-content{padding:0px;}
-.main { width: 100%; max-width: 480px; text-align: center; margin: auto; position: relative;overflow: hidden;}
-.content .main{background: #f9f9f9 url(../img/bg_content.gif) 0 0 repeat;padding-top:60px;}
+.main { width: 100%; max-width:960px;text-align:center; margin: auto; position: relative;overflow: hidden; }
+.content .main{background: #f9f9f9 url(../img/bg_content.gif) 0 0 repeat;padding-bottom:56px;}
 .content .bgf{background: #f9f9f9}
 .index_detail{border-bottom:1px solid #e5e5e5;margin:0px 13px;padding:50px 0 30px;}
 .index_detail h2{margin:0px;font-size:1.25em;font-weight:bold;}
-.index_detail p{margin:0.625em 0;}
-.code img{border:1px solid #231815; border-radius:5px;}
-.index_detail .ui-btn{height:1.75em;width:90%;margin:auto;border:1px solid #aaa9a9;
+.index_detail p{margin:0.625em 0;line-height:1.5;}
+.code img{
+    border:1px solid #ccc; 
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius:5px;
+}
+.index_detail .ui-btn{height:1.75em;width:90%;border:1px solid #aaa9a9;
 	background-image:-webkit-gradient(linear, left top, left bottom, from( #f0f0f0 ), to( #cacaca )); 
     background-image:-webkit-linear-gradient(#f0f0f0, #cacaca) ;
     background-image:-moz-linear-gradient(#f0f0f0, #cacaca);
     background-image:-ms-linear-gradient( #f0f0f0,#cacaca); 
     background-image:-o-linear-gradient(#f0f0f0, #cacaca);
     background-image:linear-gradient(#f0f0f0, #cacaca);
+    max-width:235px;
 } 
 
 .index_detail .ui-btn:hover{
@@ -104,8 +147,8 @@ header.header{
 .promo_pd{width:68.18%; text-align:left;}
 .promo_pd h3{font-size: 1.875em;font-weight: bold;}
 .promo_pd p{font-size: 1.25em;color:#9f9f9f;margin-top:1.125em;}
-.sales_banner .opacity_div{position:absolute; left:0 ; right:0; bottom:0; height:2.25em; line-height: 2.25em; background: #000; opacity:0.5;}
-.sales_banner h2{position:absolute; left:0 ; right:0; bottom:0; height:2.25em; line-height: 2.25em; color:#fff;}
+.sales_banner .opacity_div{position:absolute; left:0 ; right:0; bottom:0; height:36px;line-height:36px; background: #000; opacity:0.5;}
+.sales_banner h2{position:absolute; left:0 ; right:0; bottom:0; height:1.8em; line-height:1.8em; color:#fff;font-size: 1.25em;}
 
 /*promoDetail*/
 .img_p img{max-width:100%;}
@@ -124,7 +167,7 @@ header.header{
 .pd_msg .re_phone a:hover{color:#fff; background:linear-gradient(#5eb023,#478419) repeat 0 0 #fff;text-shadow:none;}
 
 /*tracking 追踪溯源*/
-.stepItem{margin: 0 6.25%;text-align: left; background: #f9f9f9 url(../img/track_middle.gif) left bottom no-repeat;height: 50px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.stepItem{margin: 0px 6.25% 0px;text-align: left; background: #f9f9f9 url(../img/track_middle.gif) left bottom no-repeat;height: 50px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 .stepItem:first-child{background:url(../img/track_last.gif) left bottom no-repeat;}
 .stepItem:last-child{background:url(../img/track_first.gif) left bottom no-repeat;}
 .stepItem:only-child{background:url(../img/track_only.gif) left bottom no-repeat;}
@@ -161,7 +204,11 @@ header.header{
 .businessShow .promo_pd p{font-size:0.8125em;margin-top:0.8em;}
 
 /*complaints 质量投诉*/
-.com_form_wrap{font-size:1.125em;padding:30px 0 50px; }
+
+.complaints .form_wrap{
+    font-size:1.125em;padding:30px 0 50px; 
+    max-width:640px;
+}
 .form_wrap .ui-submit{ width:78.4%; max-width:345px; margin:30px auto 0;
     font-size: 2.1875em;
     color:#fff;
@@ -177,7 +224,7 @@ header.header{
     -webkit-box-shadow:1px 1px 2px #b7b7b7, -1px 1px 2px #b7b7b7, 0 1px 5px #b7b7b7;
     box-shadow:1px 1px 2px #b7b7b7, -1px 1px 2px #b7b7b7, 0 1px 5px #b7b7b7;
 }
-.com_form_wrap .ui-submit .ui-btn-text{font-size: 2.1875em;} 
+.form_wrap .ui-submit .ui-btn-text{font-size: 2.1875em;} 
 
 /*footer*/
 .footer{
@@ -188,6 +235,10 @@ header.header{
     background-image:-o-linear-gradient(#e8e8e8, #ccc);
     background-image:linear-gradient(#e8e8e8, #ccc);
     border:1px solid #aaa9a9;color:#666;font-size: 0.75em; font-weight: normal;text-shadow:none;padding-bottom:8px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .footer p{margin:8px 0 0;}
 .footer .ui-title{font-size: 0.8125em;font-weight: normal;color:#333; text-shadow:none;}
@@ -199,10 +250,10 @@ header.header{
     background-image:-ms-linear-gradient(#ebebeb, #cbcbcb); 
     background-image:-o-linear-gradient(#ebebeb, #cbcbcb);
     background-image:linear-gradient(#ebebeb, #cbcbcb);
-
     display:inline-block;
     color:#666;margin:0;font-weight: normal;}
 .tel_num .ui-btn-inner{padding:0.1em 0.8em 0;}
+.tel_num .ui-icon{background:  url(../img/icon_phone.png) 0 1px no-repeat;}
 
 /*gotop*/
 .goTop{width:44px; height:45px;background: url(../img/gotop.png) no-repeat 0 0;display:block;position:fixed;left:50%;bottom:57px;margin-left:13%;}
@@ -229,14 +280,24 @@ header.header{
 .clf { zoom:1 }
 .clear { clear:both; height:0; overflow:hidden; }
 
-
-@media all and (max-width:780px){
-    .main { width: 100%;max-width:780px;text-align: center; margin: auto; position: relative;overflow: hidden;padding-top:60px;}
+@media screen and (max-width:960px){
+    .index_detail .ui-btn{margin-left:0px:}
 }
-@media all and (max-width:480px){
+@media screen and (max-width:780px){
+    .main {max-width:780px;}
+}
+
+@media screen and (min-width:480px){
+    .index_detail .ui-btn{margin:0px:}
+}
+
+@media screen and (max-width:480px){
     .check_code_wrap label.ui-input-text{line-height:2em;height:2em;width:75%;font-size:0.875em;}
     .promo_pd h3{font-size: 1.2em;}
     .promo_pd p{font-size: 1em;color:#9f9f9f;margin-top:1em;}
+    .header .ui-btn-inner{
+        padding:.55em 10px .5em
+    }
 }
 
 
