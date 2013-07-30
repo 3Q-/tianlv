@@ -9,7 +9,8 @@ button,p{font-size:0.875em;line-height:1;}
     -moz-box-shadow:0 1px 5px #666;
     -webkit-box-shadow:0 1px 5px #666;
     box-shadow:0 1px 5px #666;
-    background: #000;position: relative;z-index:10;border-bottom:1px solid #396a15;}
+    background: #000;position: relative;z-index:10;border-bottom:1px solid #396a15;
+}
 header.header{ 
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #5fb223 ), to( #3a6b15 )); 
     background-image:-webkit-linear-gradient(#5fb223, #3a6b15) ;
@@ -112,7 +113,7 @@ header.header{
 } 
 
 .index_detail .ui-btn:hover .ui-btn-inner{color:#fff; text-shadow:1px 1px 1px #333;} 
-.index_detail .ui-btn-inner{padding:0.25em 10px;font-size: 0.875em;color:#4d4d4d;} 
+.index_detail .ui-btn-inner{padding:0.40em 10px 0.2em;font-size: 0.875em;color:#4d4d4d;} 
 .index_menu{border-top:1px solid #fff;margin:0px 13px;padding-top:10px;padding-bottom:30px;}
 .index_menu h3{font-size:1em;font-weight: 500;margin-top:0.75em;margin-bottom:0;}
 .menu_item{float: left;display: inline;width:25%;margin:1.25em 0 0;}

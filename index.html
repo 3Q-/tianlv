@@ -8,17 +8,26 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/mobile.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('.menu_item_1').click(function(){
+                    var href = $(this).find('a').attr('href');
+                    $.mobile.changePage(href, "slide"); 
+                    return false;
+                })
+            });
+        </script>
     </head>
     <body>
-        <div data-role="page" class="bd">
-            <div class="header_wrap"  data-position="fixed"> <!-- header start -->
-                <header data-role="header" class="header" >
-                <h1 class="web_title">
-                    <img src="img/logo.png" alt="logo" />
-                    赣南脐橙
-                </h1> 
+        <div data-role="page">
+            <div class="header_wrap">
+                <header data-role="header" class="header">
+                    <h1 class="web_title">
+                        <img src="img/logo.png" alt="logo" />
+                        赣南脐橙
+                    </h1> 
                 </header> 
-            </div><!-- header end -->
+            </div>
             <div data-role="content" class="content"> <!-- content start -->
                 <div class="main"><!-- main start -->
                     <div class="banner">
@@ -41,31 +50,31 @@
                     </div>
                     <div class="index_menu clf">
                         <div class="menu_item">
-                            <div class="menu_item_1"><a href="tracking.html" data-prefetch="true" rel="external" data-transition="slide" data-inline="true"><img src="img/menu1.png" alt="追踪溯源" /></a></div>
+                            <div class="menu_item_1"><a href="tracking.html" data-transition="slide" data-direction=reverse" data-prefetch="true"><img src="img/menu1.png" alt="追踪溯源" /></a></div>
                             <h3>追踪溯源</h3>
                         </div>
                         <div class="menu_item">
-                            <div class="menu_item_1"><a href="promotions.html" data-prefetch="true" rel="external"><img src="img/menu2.png" alt="促销信息" /></a></div>
+                            <div class="menu_item_1"><a href="promotions.html" data-ajax="false" data-prefetch="true" rel="external"><img src="img/menu2.png" alt="促销信息" /></a></div>
                             <h3>促销信息</h3>
                         </div>
                         <div class="menu_item">
-                            <div class="menu_item_1"><a href="rePrice.html" data-prefetch="true" rel="external"><img src="img/menu3.png" alt="参考售价" /></a></div>
+                            <div class="menu_item_1"><a href="rePrice.html" data-prefetch="true" data-ajax="false" rel="external"><img src="img/menu3.png" alt="参考售价" /></a></div>
                             <h3>参考售价</h3>
                         </div>
                         <div class="menu_item">
-                            <div class="menu_item_1"><a href="health.html" data-prefetch="true" rel="external"><img src="img/menu4.png" alt="食尚养生" /></a></div>
+                            <div class="menu_item_1"><a href="health.html" data-prefetch="true" data-ajax="false"  rel="external"><img src="img/menu4.png" alt="食尚养生" /></a></div>
                             <h3>食尚养生</h3>
                         </div>
                         <div class="menu_item">
-                            <div class="menu_item_1"><a href="video.html" data-prefetch="true" rel="external"><img src="img/menu5.png" alt="精彩呈现" /></a></div>
+                            <div class="menu_item_1"><a href="video.html" data-prefetch="true" data-ajax="false" rel="external"><img src="img/menu5.png" alt="精彩呈现" /></a></div>
                             <h3>精彩呈现</h3>
                         </div>
                         <div class="menu_item">
-                            <div class="menu_item_1"><a href="businessShow.html" data-prefetch="true" rel="external"><img src="img/menu6.png" alt="厂商展示" /></a></div>
+                            <div class="menu_item_1"><a href="businessShow.html" data-prefetch="true" data-ajax="false" rel="external"><img src="img/menu6.png" alt="厂商展示" /></a></div>
                             <h3>厂商展示</h3>
                         </div>
                         <div class="menu_item">
-                            <div class="menu_item_1"><a href="complaints.html" data-prefetch="true" rel="external"><img src="img/menu7.png" alt="质量投诉" /></a></div>
+                            <div class="menu_item_1"><a href="complaints.html" data-prefetch="true" data-ajax="false" rel="external"><img src="img/menu7.png" alt="质量投诉" /></a></div>
                             <h3>质量投诉</h3>
                         </div> 
                     </div>
